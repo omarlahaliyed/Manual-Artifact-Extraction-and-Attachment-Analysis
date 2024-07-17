@@ -18,11 +18,13 @@ The Manual Artifact Extraction and Attachemnet Analysis Lab is aimed manually co
 - Phishtool to forensically analyze phishing emails
 - Cyberchef for decoding
 
-## Steps
-drag & drop screenshots here or use imgur and reference them using imgsrc
+## Steps and Questions
+### Lab Overview
 
-Every screenshot should have some text explaining what the screenshot is about.
+In this activity, you will be manually collecting artifacts from safe phishing emails. The Mozilla Thunderbird email client can be used for viewing, as well as the Sublime Text 2 text editor for looking at the .eml files directly Manually collecting artifacts using a client and text editor, is a core skill for phishing analysis, as not all organizations will have access to tools that can automatically retrieve email, web, and file-based artifacts.
 
-Example below.
+**Question 1 - Email One - What is the sending address?**
 
-*Ref 1: Network Diagram*
+Opening the email in Sublime Text we can use the Find feature (CTRL+F) to search for “From”.
+!Image Alt text
+
