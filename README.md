@@ -26,5 +26,5 @@ In this activity, you will be manually collecting artifacts from safe phishing e
 **Question 1 - Email One - What is the sending address?**
 
 Opening the email in Sublime Text we can use the Find feature (CTRL+F) to search for “From”.
-!Image Alt text
 
+![image](https://github.com/user-attachments/assets/6d9a0cdf-79c1-4614-9136-4d65ad95473f)
