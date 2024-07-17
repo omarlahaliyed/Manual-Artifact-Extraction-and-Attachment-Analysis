@@ -1,25 +1,22 @@
-# PROJECTNAME
+# Manual Artifact Extraction and Attachment Analysis Lab
 
 ## Objective
-[Brief Objective - Remove this afterwards]
 
-The Detection Lab project aimed to establish a controlled environment for simulating and detecting cyber attacks. The primary focus was to ingest and analyze logs within a Security Information and Event Management (SIEM) system, generating test telemetry to mimic real-world attack scenarios. This hands-on experience was designed to deepen understanding of network security, attack patterns, and defensive strategies.
+The Manual Artifact Extraction and Attachemnet Analysis Lab is aimed manually collect artifacts from safe phishing emails and analyze its attachemnt using phishing analysis tools. This process helps in understanding the nature of phishing attacks, identifying malicious components, and developing strategies to counteract such threats effectively.
 
 ### Skills Learned
-[Bullet Points - Remove this afterwards]
-
-- Advanced understanding of SIEM concepts and practical application.
-- Proficiency in analyzing and interpreting network logs.
-- Ability to generate and recognize attack signatures and patterns.
-- Enhanced knowledge of network protocols and security vulnerabilities.
-- Development of critical thinking and problem-solving skills in cybersecurity.
+- Phishing Email Identification
+- Artifact Collection
+- Attachment Analysis
+- Threat Analysis
 
 ### Tools Used
-[Bullet Points - Remove this afterwards]
-
-- Security Information and Event Management (SIEM) system for log ingestion and analysis.
-- Network analysis tools (such as Wireshark) for capturing and examining network traffic.
-- Telemetry generation tools to create realistic network traffic and attack scenarios.
+- Powershell for finding hashes
+- Virus Total and Talos File Reputation for file reputation
+- Thunderbird for email
+- Sublime text for artifact collection
+- Phishtool to forensically analyze phishing emails
+- Cyberchef for decoding
 
 ## Steps
 drag & drop screenshots here or use imgur and reference them using imgsrc
