@@ -126,3 +126,53 @@ In Thunderbird we can right-click the attachment and click Save-As, then save it
  
  ![image](https://github.com/user-attachments/assets/8ac0d1d8-e530-4ebf-b13d-0681295936d5)
 
+### Investigating Attachment
+
+**Question 1 - What is the name of the file that was attached to a phishing email?**
+
+Looking in folder for Lab 3 on the Desktop we can find the file. Right-clicking it we can go to Properties and copy the filename. We also need the file extension, which we can see on this panel is ‘.html’.
+
+![image](https://github.com/user-attachments/assets/4af105c7-f344-4fb7-b6d1-9c16f189380f)
+
+**Question 2 - What is the SHA256 hash value of this file?**
+
+We can hold shift and right-click in the folder that contains the file to select ‘Open PowerShell Window Here’. Then we'll use the command Get-FileHash MICRO (then pressing the Tab key to auto-complete the filename).
+
+![image](https://github.com/user-attachments/assets/47ea4011-316f-4665-b715-00ffd7c33659)
+
+**Question 3 - What is the file size in KB?**
+
+We can get this value by right-clicking the file, clicking Properties, then looking at the Size property.
+
+![image](https://github.com/user-attachments/assets/b4d51627-d513-46d2-b6b6-8fd802ad5f8f)
+
+**Question 4 - Open the file - What company is the presented web page trying to impersonate?**
+
+Based on the Website Title property and the design, this web page is imitating Microsoft's Outlook / Office365 login portal (even though the logo image isn't loading, because the lab has no internet connection).
+
+![image](https://github.com/user-attachments/assets/e2a9c9c3-30df-4c4a-8134-d72597cdd957)
+
+**Question 5 - Based on the email address that has been auto filled, what recipient was this phishing email targeting?**
+
+We can see that the email is already set in the web page as contact@securityblue.team.
+
+![image](https://github.com/user-attachments/assets/278ecb3d-af49-4395-942f-39fcd73e934b)
+
+**Question 6 - Right-click the web page within Chrome and select View Source. Press CTRL+A to select all of the text, then CTRL+C to copy it. Open up CyberChef from the folder on the Desktop and paste the text into the 'Input' box in the top right. Drag 'URL Decode' from the left-hand panel into the 'Recipe' tab to decode it. Search for "logo" - what is the filename of the Microsoft logo used?**
+
+Putting the source code in CyberChef with the URL Decode operation, we can see the contents of the web page clearly.
+
+![image](https://github.com/user-attachments/assets/7712c1b5-9e87-4ec1-be4f-91b865d17005)
+
+Using CTRL+F we can search for ‘logo’ and find the URL and filename we need to answer this question.
+
+![image](https://github.com/user-attachments/assets/07e46822-7089-4cb6-b412-5a03dcc8c5f4)
+
+**Question 7 - Open Developer Tools (see instructions if you're unsure) and go to the Network tab. Enter in the password 'test' and click Sign in. Click on the off.php entry - what is the request URL being used to send the email and password to the web server?**
+
+Opening Developer Tools then going to the Network tab, we can see any network activity on a website. Submitting the password ‘test’ will result in the following URL being visited on a malicious domain, which is how the attacker receives the credentials. Copying this value will give us the answer for the question. Notice how the email and password are in this URL!
+
+![image](https://github.com/user-attachments/assets/55b9c25d-62ad-46ec-aba6-7da335b70968)
+
+
+
